@@ -35,7 +35,7 @@ if (isset($_SESSION['user'])) {
 
 <html lang="es">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>Mini-SOC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
      <!-- ===== FAVICON ===== -->

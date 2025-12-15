@@ -46,7 +46,7 @@ if (isset($_POST['email']))
         
       // En caso de un registro  exitoso 
       // La gestión de usuario en la página principal se hace a través de la variable de sesión
-      header('Location: index.php');
+      //header('Location: index.php');
     }
   }
 }
@@ -54,11 +54,11 @@ if (isset($_POST['email']))
 // analizamos si hay variable de sesión almacenada.
 else if (isset($_SESSION['user'])){
     // En caso de que exista variable de sesión redireccionamos a la página principal
-     header('Location: index.php'); 
+     //header('Location: index.php'); 
 }
 ?>
 <div class="container">
-  <form class="form-horizontal" role="form" method="POST" action="login.php">
+  <form class="form-horizontal" role="form" method="POST" action="index.php">
           <div class="row">
               <div class="col-md-3"></div>
               <div class="col-md-6">

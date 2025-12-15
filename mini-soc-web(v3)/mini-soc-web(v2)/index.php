@@ -50,7 +50,7 @@ else if (isset($_SESSION['user'])){
 ?>
 
 <!-- ================== NAVBAR ================== -->
-<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+<!-- <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <a class="navbar-brand" data-section="home" href="#">Mini-SOC</a>
     <button class="navbar-toggler" data-toggle="collapse" data-target="#navMain">
         <span class="navbar-toggler-icon"></span>
@@ -66,7 +66,7 @@ else if (isset($_SESSION['user'])){
             <li class="nav-item"><a class="nav-link" data-section="login" href="#login">Login</a></li>
         </ul>
     </div>
-</nav>
+</nav> -->
 
 <!-- ================== MAIN CONTENT ================== -->
 <main class="container-fluid p-0">
@@ -958,7 +958,7 @@ else if (isset($_SESSION['user'])){
             </div>
         </header>
 <div class="container">
-  <form class="form-horizontal" role="form" method="POST" action="login.php">
+  <form class="form-horizontal" role="form" method="POST" action="index.php">
           <div class="row">
               <div class="col-md-3"></div>
               <div class="col-md-6">

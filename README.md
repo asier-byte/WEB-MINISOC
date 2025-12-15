@@ -1,6 +1,6 @@
-Mini SOC Local
+Mini SOC Local<img width="223" height="209" alt="logo-minisoc" src="https://github.com/user-attachments/assets/9492587c-9930-4ba6-bc32-87ad5759bc3b" />
 
-Estructura del sitio web
+**Estructura del sitio web**
 
 El sitio web de Mini SOC Local está diseñado como una SPA (Single Page Application) con navegación por secciones. La estructura principal se organiza de la siguiente manera:
 
@@ -16,8 +16,7 @@ El sitio web de Mini SOC Local está diseñado como una SPA (Single Page Applica
 | **Login**                         | Formulario de inicio de sesión para administradores                                                                               | Acceso seguro al panel de administración              |
 
 
-Estética y estilos
-
+🎨 **Estética y estilos**
 Para mantener homogeneidad en todas las secciones, se han definido los siguientes estilos:
 
 Colores principales
@@ -32,7 +31,7 @@ Gris claro: #e6ebf1 y #cfd8e5 → fondos y degradados
 
 Gris oscuro: #1c1c1c → texto principal
 
-Tipografía
+**Tipografía**
 
 Fuente principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 
@@ -54,7 +53,8 @@ Redes sociales: botones circulares con colores de cada red y efecto hover.
 
 Responsivo: ajuste de tipografía y espaciado para móviles (@media max-width: 768px).
 
-Estructura de archivos:
+
+🗂️**Estructura de archivos:**
 /mini-soc-web
 │
 ├── index.html              # Página principal (SPA)

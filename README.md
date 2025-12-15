@@ -1,4 +1,5 @@
-Mini SOC Local<img width="223" height="209" alt="logo-minisoc" src="https://github.com/user-attachments/assets/9492587c-9930-4ba6-bc32-87ad5759bc3b" />
+Mini SOC 
+<img width="223" height="209" alt="logo-minisoc" src="https://github.com/user-attachments/assets/9492587c-9930-4ba6-bc32-87ad5759bc3b" />
 
 **Estructura del sitio web**
 
@@ -31,25 +32,25 @@ Paleta de colores:
 
 **Tipografía**
 
-Fuente principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+| Elemento                   | Descripción                                                  |
+| -------------------------- | ------------------------------------------------------------ |
+| **Fuente principal**       | 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif              |
+| **Jerarquía tipográfica**  | Basada en Bootstrap: display-4, h2, h3, lead                 |
+| **Estilos personalizados** | Para títulos y párrafos, manteniendo legibilidad y contraste |
 
-Jerarquía tipográfica con Bootstrap (display-4, h2, h3, lead) y estilos personalizados para títulos y párrafos.
 
-Componentes y estilos clave
+**Componentes y estilos clave**
 
-Navbar: fija, con sombras suaves y enlaces interactivos (hover y active).
+| Componente / Estilo | Descripción                                                                                    |
+| ------------------- | ---------------------------------------------------------------------------------------------- |
+| **Navbar**          | Fija, con sombras suaves, enlaces interactivos (hover y active)                                |
+| **Hero / Header**   | Altura mínima, centrado vertical y horizontal, overlay semitransparente, texto con text-shadow |
+| **Cards**           | Esquinas redondeadas, animación hover-scale, sombra ligera y transición suave                  |
+| **Botones**         | btn-primary azul con transición de color y efecto hover                                        |
+| **Secciones**       | Títulos y subtítulos en azul oscuro con opción de text-shadow                                  |
+| **Redes sociales**  | Botones circulares, colores representativos y efecto hover                                     |
+| **Responsivo**      | Ajuste de tipografía y espaciado para móviles (@media max-width: 768px)                        |
 
-Hero/header: altura mínima, centrado vertical y horizontal, overlay semitransparente, texto con text-shadow para mejorar contraste.
-
-Cards: esquinas redondeadas, transición hover-scale, sombra y animación ligera.
-
-Botones: btn-primary azul con transición de color y efecto hover.
-
-Secciones: títulos y subtítulos con color azul oscuro y opcional text-shadow para relieve.
-
-Redes sociales: botones circulares con colores de cada red y efecto hover.
-
-Responsivo: ajuste de tipografía y espaciado para móviles (@media max-width: 768px).
 
 
 🗂️**Estructura de archivos:**

@@ -18,18 +18,16 @@ El sitio web de Mini SOC Local está diseñado como una SPA (Single Page Applica
 
 🎨 **Estética y estilos**
 Para mantener homogeneidad en todas las secciones, se han definido los siguientes estilos:
+Paleta de colores:
 
-Colores principales
+| Color                          | Uso                        |
+| ------------------------------ | -------------------------- |
+| Azul oscuro (#004080)          | Encabezados, navbar        |
+| Azul claro (#0077ff)           | Botones primarios          |
+| Blanco (#ffffff)               | Texto sobre fondos oscuros |
+| Gris claro (#e6ebf1 / #cfd8e5) | Fondos y degradados        |
+| Gris oscuro (#1c1c1c)          | Texto principal            |
 
-Azul oscuro: #004080 → headers y navbar
-
-Azul claro: #0077ff → botones primarios
-
-Blanco: #ffffff → texto sobre fondos oscuros
-
-Gris claro: #e6ebf1 y #cfd8e5 → fondos y degradados
-
-Gris oscuro: #1c1c1c → texto principal
 
 **Tipografía**
 
@@ -55,14 +53,6 @@ Responsivo: ajuste de tipografía y espaciado para móviles (@media max-width: 7
 
 
 🗂️**Estructura de archivos:**
-/mini-soc-web
-│
-├── index.html              # Página principal (SPA)
-├── README.md               # Documentación del proyecto
-├── assets/
-│   ├── img/                # Imágenes (logo, equipo, banners)
-│   └── styles/             
-│       └── styles.css      # Estilos personalizados
-└── js/
-    └── scripts.js          # Scripts de navegación y modales
+<img width="383" height="187" alt="image" src="https://github.com/user-attachments/assets/42504f2c-df7e-4ccb-be34-d6365ca5ae2f" />
+
 

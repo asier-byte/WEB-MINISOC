@@ -1,6 +1,6 @@
-Mini SOC 
 <img width="223" height="209" alt="logo-minisoc" src="https://github.com/user-attachments/assets/9492587c-9930-4ba6-bc32-87ad5759bc3b" />
 
+**_Mini SOC_** 
 **Estructura del sitio web**
 
 El sitio web de Mini SOC Local está diseñado como una SPA (Single Page Application) con navegación por secciones. La estructura principal se organiza de la siguiente manera:

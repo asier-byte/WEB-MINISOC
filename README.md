@@ -1,3 +1,4 @@
+<img width="445" height="418" alt="image" src="https://github.com/user-attachments/assets/fa7c0c9b-ae6c-44ec-8c3f-710dc6f569e7" />
 
 
 **_Mini SOC_** 

@@ -1,4 +1,4 @@
-<img width="164" height="45" alt="image" src="https://github.com/user-attachments/assets/b69d462a-e701-40ef-b715-dbc3d99b4c43" /><img width="223" height="209" alt="logo-minisoc" src="https://github.com/user-attachments/assets/9492587c-9930-4ba6-bc32-87ad5759bc3b" />
+
 
 **_Mini SOC_** 
 

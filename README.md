@@ -85,3 +85,6 @@ Let's Chat: http://localhost:8083
 Moodle: http://localhost:8084
 
 - Puedes cambiar puertos en services/.env y la intranet los leerá automáticamente.
+
+**Nota**
+- Debido a bastantes problemas de compatibilidad a la hora de levantar los servicios de la intranet, hemos tenido que apoyarnos en la IA, intentando entender en todo momento lo que nos proponía para no usarla de una manera que haga todo por nosotros, sino usándola con fines educativos para conseguir un correcto funcionamiento de la página.

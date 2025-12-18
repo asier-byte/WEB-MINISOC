@@ -63,6 +63,7 @@ if (isset($_SESSION['user'])) {
             <li class="nav-item"><a class="nav-link" data-section="equipo" href="#equipo">El equipo</a></li>
             <li class="nav-item"><a class="nav-link" data-section="clientes" href="#clientes">Clientes</a></li>
             <li class="nav-item"><a class="nav-link" data-section="contacto" href="#contacto">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="intranet.php">Intranet</a></li>
             <li class="nav-item"><a class="nav-link" data-section="logout" href="#logout">Logout</a></li>
         </ul>
     </div>

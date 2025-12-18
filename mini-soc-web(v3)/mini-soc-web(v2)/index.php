@@ -44,6 +44,8 @@ if (isset($_POST['email']))
 // En caso de que no se haya completado el formulario,
 // analizamos si hay variable de sesión almacenada.
 else if (isset($_SESSION['user'])){
+    header('Location: intranet.php');
+    exit;
     // En caso de que exista variable de sesión redireccionamos a la página principal
    //  header('Location: index.php'); 
 }

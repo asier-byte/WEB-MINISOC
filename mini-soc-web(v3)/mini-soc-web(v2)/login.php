@@ -46,7 +46,8 @@ if (isset($_POST['email']))
         
       // En caso de un registro  exitoso 
       // La gestión de usuario en la página principal se hace a través de la variable de sesión
-      //header('Location: index.php');
+      header('Location: intranet.php');
+      exit;
     }
   }
 }
@@ -54,7 +55,8 @@ if (isset($_POST['email']))
 // analizamos si hay variable de sesión almacenada.
 else if (isset($_SESSION['user'])){
     // En caso de que exista variable de sesión redireccionamos a la página principal
-     //header('Location: index.php'); 
+      header('Location: intranet.php');
+      exit;
 }
 ?>
 <div class="container">

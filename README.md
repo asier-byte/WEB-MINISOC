@@ -1,4 +1,4 @@
-<img width="223" height="209" alt="logo-minisoc" src="https://github.com/user-attachments/assets/9492587c-9930-4ba6-bc32-87ad5759bc3b" />
+<img width="164" height="45" alt="image" src="https://github.com/user-attachments/assets/b69d462a-e701-40ef-b715-dbc3d99b4c43" /><img width="223" height="209" alt="logo-minisoc" src="https://github.com/user-attachments/assets/9492587c-9930-4ba6-bc32-87ad5759bc3b" />
 
 **_Mini SOC_** 
 
@@ -60,3 +60,27 @@ Paleta de colores:
 <img width="383" height="187" alt="image" src="https://github.com/user-attachments/assets/42504f2c-df7e-4ccb-be34-d6365ca5ae2f" />
 
 
+**Mini-SOC Intranet + Servicios Docker**
+1) Intranet (Mini-SOC)
+
+Ejecuta el proyecto Mini-SOC en tu máquina (Apache/PHP local o el método que uses).
+Tras iniciar sesión, entra en intranet.php (o usa el enlace Intranet en el menú).
+
+2) Levantar los 4 servicios con Docker Compose
+
+En la carpeta services/ están el .env y docker-compose.yml
+
+Arrancar servicios
+<img width="164" height="45" alt="image" src="https://github.com/user-attachments/assets/bd53bc6c-de31-4803-8bed-533cbccfa749" />
+
+Accesos
+
+Nextcloud: http://localhost:8081
+
+Peppermint: http://localhost:8082
+
+Let's Chat: http://localhost:8083
+
+Moodle: http://localhost:8084
+
+- Puedes cambiar puertos en services/.env y la intranet los leerá automáticamente.

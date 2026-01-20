@@ -20,8 +20,7 @@ El sitio web de Mini SOC Local está diseñado como una SPA (Single Page Applica
 | **Contacto**                      | Formulario de contacto, email, redes sociales y ubicación en Google Maps                                                          | Facilitar la comunicación con usuarios                |
 | **Login**                         | Formulario de inicio de sesión para administradores                                                                               | Acceso seguro al panel de administración              |
 
-
-🎨 **Estética y estilos**
+**Estética y estilos**
 Para mantener homogeneidad en todas las secciones, se han definido los siguientes estilos:
 Paleta de colores:
 
@@ -57,7 +56,7 @@ Paleta de colores:
 
 
 
-🗂️**Estructura de archivos:**
+**Estructura de archivos:**
 <img width="383" height="187" alt="image" src="https://github.com/user-attachments/assets/42504f2c-df7e-4ccb-be34-d6365ca5ae2f" />
 
 

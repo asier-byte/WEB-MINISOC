@@ -1,0 +1,133 @@
+services:
+  nextcloud-db:
+    image: mariadb:11
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: root123
+      MARIADB_DATABASE: nextcloud
+      MARIADB_USER: nextcloud
+      MARIADB_PASSWORD: nextcloud123
+    volumes:
+      - nextcloud_db:/var/lib/mysql
+
+  nextcloud:
+    image: nextcloud:apache
+    restart: always
+    depends_on:
+      - nextcloud-db
+    ports:
+      - "${NEXTCLOUD_PORT}:80"
+    environment:
+      MYSQL_HOST: nextcloud-db
+      MYSQL_DATABASE: nextcloud
+      MYSQL_USER: nextcloud
+      MYSQL_PASSWORD: nextcloud123
+      NEXTCLOUD_ADMIN_USER: ${NEXTCLOUD_ADMIN_USER}
+      NEXTCLOUD_ADMIN_PASSWORD: ${NEXTCLOUD_ADMIN_PASSWORD}
+    volumes:
+      - nextcloud_data:/var/www/html
+
+  peppermint-db:
+    image: postgres:16
+    restart: always
+    environment:
+      POSTGRES_USER: ${PEPPERMINT_DB_USER}
+      POSTGRES_PASSWORD: ${PEPPERMINT_DB_PASSWORD}
+      POSTGRES_DB: ${PEPPERMINT_DB_NAME}
+    volumes:
+      - peppermint_db:/var/lib/postgresql/data
+
+  peppermint:
+    image: pepperlabs/peppermint:latest
+    restart: always
+    depends_on:
+      - peppermint-db
+    ports:
+      - "${PEPPERMINT_PORT}:3000"
+    environment:
+      DB_HOST: peppermint-db
+      DB_PORT: 5432
+      DB_USERNAME: ${PEPPERMINT_DB_USER}
+      DB_PASSWORD: ${PEPPERMINT_DB_PASSWORD}
+      DB_DATABASE: ${PEPPERMINT_DB_NAME}
+
+  letschat-mongo:
+    image: mongo:4.4
+    restart: always
+    volumes:
+      - letschat_mongo:/data/db
+
+  letschat:
+    image: sdelements/lets-chat:latest
+    restart: always
+    depends_on:
+      - letschat-mongo
+    ports:
+      - "${LETSCHAT_PORT}:8080"
+    environment:
+      LCB_DATABASE_URI: mongodb://letschat-mongo:27017/${LETSCHAT_MONGO_DB}
+
+  moodle-db:
+    image: mariadb:10.6
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root123
+      MYSQL_DATABASE: ${MOODLE_DB_NAME}
+      MYSQL_USER: ${MOODLE_DB_USER}
+      MYSQL_PASSWORD: ${MOODLE_DB_PASSWORD}
+    volumes:
+      - moodle_db:/var/lib/mysql
+
+  moodle:
+    image: bitnamilegacy/moodle:latest
+    restart: always
+    depends_on:
+      - moodle-db
+    ports:
+      - "${MOODLE_PORT}:8080"
+    environment:
+      ALLOW_EMPTY_PASSWORD: "yes"
+      MOODLE_DATABASE_HOST: moodle-db
+      MOODLE_DATABASE_NAME: ${MOODLE_DB_NAME}
+      MOODLE_DATABASE_USER: ${MOODLE_DB_USER}
+      MOODLE_DATABASE_PASSWORD: ${MOODLE_DB_PASSWORD}
+      MOODLE_USERNAME: ${MOODLE_ADMIN_USER}
+      MOODLE_PASSWORD: ${MOODLE_ADMIN_PASSWORD}
+      MOODLE_EMAIL: ${MOODLE_ADMIN_EMAIL}
+    volumes:
+      - moodle_data:/bitnami/moodle
+
+  intranet-db:
+    image: mariadb:11
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: ${INTRANET_DB_ROOT_PASSWORD}
+      MARIADB_DATABASE: ${INTRANET_DB_NAME}
+    volumes:
+      - intranet_db:/var/lib/mysql
+      - ../db/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+  intranet:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - intranet-db
+    ports:
+      - "${INTRANET_PORT}:80"
+    environment:
+      DB_HOST: intranet-db
+      DB_NAME: ${INTRANET_DB_NAME}
+      DB_USER: root
+      DB_PASS: ${INTRANET_DB_ROOT_PASSWORD}
+      APP_NAME: "Artean"
+
+volumes:
+  nextcloud_db:
+  nextcloud_data:
+  peppermint_db:
+  letschat_mongo:
+  moodle_db:
+  moodle_data:
+  intranet_db:

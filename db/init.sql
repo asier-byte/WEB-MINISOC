@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS proy1v1procesoregistro;
+USE proy1v1procesoregistro;
+
+CREATE TABLE IF NOT EXISTS members (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  user VARCHAR(190) NOT NULL,
+  pass VARCHAR(190) NOT NULL
+);

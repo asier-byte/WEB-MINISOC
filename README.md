@@ -73,6 +73,11 @@ En la carpeta services/ están el .env y docker-compose.yml
 Arrancar servicios
 <img width="164" height="45" alt="image" src="https://github.com/user-attachments/assets/bd53bc6c-de31-4803-8bed-533cbccfa749" />
 
+## Despliegue
+
+cd services
+docker compose --env-file .env up -d --build
+
 Accesos
 
 Nextcloud: http://localhost:8081
